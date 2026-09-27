@@ -31,6 +31,38 @@ using namespace std;
 
 int main() 
 {
+    int n;
+    cin >> n;
+    vector <pair<int,int>> v;
+    for (int i = 0 ; i < n ; i++ ){
+        int a=0 , b=0 , c=0;
+        cin >> a;
+        if (a == 1){
+            cin >> b >> c;
+            v.push_back({b,c});
+            continue;
+        }
+        if (a == 2){
+            if (v.size() == 0){
+                cout << "-1" << "\n";
+                continue;
+            }
+            cout << v.front().first << " " << v.front().second << "\n";
+            v.erase(v.begin());
+            continue;
+        }
+        if (a == 3){
+            cin >> b;
+            for (int j=0 ; j<v.size(); ){
+                if (v[j].first == b) {
+                    v.erase(v.begin() + j);
+                } else {
+                    j++;
+                }
+            }
+            continue;
+        }
+    }
 
     return   0;
 }

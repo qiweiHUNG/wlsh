@@ -1,0 +1,1 @@
+{"name":"Local: I_模擬遊戲配對與過濾系統","url":"c:\\wlsh\\0922\\I_模擬遊戲配對與過濾系統.cpp","tests":[{"id":1790517707104,"input":"5\n1 300 20\n3 300\n1 500 10\n2\n2\n","output":"500 10\n-1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\wlsh\\0922\\I_模擬遊戲配對與過濾系統.cpp","group":"local","local":true}
